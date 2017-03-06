@@ -35,6 +35,15 @@ module.exports = function( grunt ) {
 					],
 					dest: 'js/',
 					ext: '.min.js'
+				},{
+					expand: true,
+					cwd: 'js/compat/',
+					src: [
+						'*.js',
+						'!*.min.js'
+					],
+					dest: 'js/compat/',
+					ext: '.min.js'
 				} ]
 			}
 		},
